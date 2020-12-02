@@ -79,7 +79,7 @@ function block_core_navigation_build_css_font_sizes( $attributes ) {
 		$font_sizes['css_classes'][] = sprintf( 'has-%s-font-size', $attributes['fontSize'] );
 	} elseif ( $has_custom_font_size ) {
 		// Add the custom font size inline style.
-		$font_sizes['inline_styles'] = sprintf( 'font-size: %spx;', $attributes['customFontSize'] );
+		$font_sizes['inline_styles'] = sprintf( 'font-size: %s;', $attributes['customFontSize'] );
 	}
 
 	return $font_sizes;
